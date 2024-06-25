@@ -14,8 +14,7 @@ if (isset($_POST["submit"])){
     $username_sample = $_POST['username_sample'];
     $password_sample = $_POST['password_sample'];
     $hashpassword = md5($password_sample);
-
-    
+     
     
     $sql = "INSERT INTO `test_table`(`userid`, `username`, `password`, `fname`, `lname`) VALUES ('','$username_sample','$hashpassword','$firstname','$lastname')";
     $result = $conn->query($sql);
