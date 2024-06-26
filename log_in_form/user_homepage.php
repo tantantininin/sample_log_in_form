@@ -91,10 +91,10 @@
 
                 <ul class="navbar-nav ms-3">
                     <li class="nav-item me-3">
-                        <a class="nav-link d-flex align-items-center" href="#!">Tables</a>
+                        <a class="nav-link d-flex align-items-center" href="\test-sample\log_in_form\update_users.php">Update</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link d-flex align-items-center me-3" href="#!">
+                        <a class="nav-link d-flex align-items-center me-3" href="\test-sample\log_in_form\select_users.php">
                             <i class="fas fa-bookmark pe-2"></i> Users
                         </a>
                     </li>
