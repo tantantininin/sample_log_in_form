@@ -20,6 +20,7 @@ if (isset($_POST["sign-up"])) {
         $user_city = $_POST['user_city'];
         $user_brgy = $_POST['user_brgy'];
         $user_zip = $_POST['user_zip'];
+        $url = '/test-sample/log_in_form/user_homepage.php';
 
         // Use a secure password hashing method
         $hashpassword = password_hash($user_password, PASSWORD_DEFAULT);
@@ -29,7 +30,8 @@ if (isset($_POST["sign-up"])) {
         $stmt->bind_param("ssssss", $user_email, $hashpassword, $user_address, $user_city, $user_brgy, $user_zip);
 
         if ($stmt->execute()) {
-            echo "New record created successfully";
+            echo "New record created successfully!!";
+            redirect($url);
         } else {
             echo "Error: " . $stmt->error;
         }
@@ -42,5 +44,10 @@ if (isset($_POST["sign-up"])) {
     $conn->close();
 } else {
     echo "Form not submitted correctly.";
+}
+
+function redirect($url) {
+    header('Location: '.$url);
+    die();
 }
 ?>
