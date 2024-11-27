@@ -58,11 +58,6 @@
   </div>
   <button type="submit" class="btn btn-primary" name="update">update</button>
     </form>
-
-
-
-
-
     <form method="post" action="user_select.php">
     <div class="mb-3">
     <label for="exampleInputEmail1" class="form-label">username</label>
@@ -74,10 +69,5 @@
   </div>
   <button type="submit" class="btn btn-primary" name="show">show</button>
     </form>
-
-
-
-
-
 </body>
 </html>

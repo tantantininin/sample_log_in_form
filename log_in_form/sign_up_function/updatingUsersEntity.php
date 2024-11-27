@@ -1,5 +1,4 @@
 <?php
-
 if (isset($_POST["update"])) {
     $servername = "localhost";
     $username = "root";
@@ -18,8 +17,6 @@ if (isset($_POST["update"])) {
     $userZip = $_POST['userZip'];
 
     // echo $userid; echo $userEmail; echo $userPassword; echo $userAddress; echo $userCity; echo $userBarangay; echo $userZip;
-
-
        $sql = "UPDATE `user_entity` SET user_email= '$userEmail', user_password= '$userPassword', user_address= '$userAddress', user_city= '$userCity', user_brgy= '$userBarangay', user_zip= '$userZip' WHERE userid = '$userid' ";
        $result = $conn->query($sql);
         echo $result;
